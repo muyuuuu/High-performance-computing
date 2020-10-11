@@ -1,60 +1,58 @@
-运行 OpenMP 的程序，多线程记录结果。
+## 代码执行环境依赖：
 
-完成矩阵并行乘法。
+1. gcc版本: 10.2.0
+2. OS: Manjaro Linux 20.1.1
+3. 物理硬件：CPU为6核12线程
+4. 编译方式：`gcc -fopenmp filename.c`
+5. 执行：`./a.out`
 
+## 多线程打印 Hello World
 
-- gcc:10.2.0
-- OS: Manjaro Linux 20.1.1
+### 结果
 
-编译选项：`gcc -fopenmp code.c`
-执行：`./a.out`
+编写程序，编译后得到可执行文件。可执行文件运行时，进入程序当前的进程。而后在进程中创建了20个线程，且多个线程执行没有顺序关系。
 
-代码：
+![](1.png)
 
-```C
-#include <stdio.h>
-#include <omp.h>
+### 结果分析
 
-int main(int argc, char const *argv[])
-{
-    int nthreads, thread_id;
-    printf("I am the main thread.\n");
-    omp_set_num_threads(20);
-    # pragma omp parallel
-    {  
-        nthreads = omp_get_num_threads();
-        thread_id = omp_get_thread_num();
-        printf("Thread id is %d, thread nums is %d\n", thread_id, nthreads);
-    }
-    printf("Back to main thread.");
-    return 0;
-}
-```
+结果分析：线程是CPU调度和分配的基本单位。换而言之，由操作系统进行任务分配，将每个线程分配到多个CPU核心上运行。当线程被分配后开始执行，先获取资源的线程先执行，因此打印出的线程并不是顺序的。最后多个线程执行完毕后，返回主进程。
 
-输出：
+## 矩阵乘法
 
-```bash
-I am the main thread.
-Thread id is 6, thread nums is 20
-Thread id is 13, thread nums is 20
-Thread id is 0, thread nums is 20
-Thread id is 4, thread nums is 20
-Thread id is 3, thread nums is 20
-Thread id is 1, thread nums is 20
-Thread id is 5, thread nums is 20
-Thread id is 10, thread nums is 20
-Thread id is 12, thread nums is 20
-Thread id is 8, thread nums is 20
-Thread id is 11, thread nums is 20
-Thread id is 2, thread nums is 20
-Thread id is 16, thread nums is 20
-Thread id is 18, thread nums is 20
-Thread id is 19, thread nums is 20
-Thread id is 14, thread nums is 20
-Thread id is 15, thread nums is 20
-Thread id is 17, thread nums is 20
-Thread id is 7, thread nums is 20
-Thread id is 9, thread nums is 20
-Back to main thread.
-```
+### 矩阵乘法实现思路：
 
+1. 定义两个矩阵，通过宏定义将矩阵的维度定义为常数。
+2. 初始化两个矩阵中的元素，类型为float，取值范围为[-2,2]。
+3. 运行串行矩阵乘法，运行多线程乘法。
+4. 为便于结果分析，多线程乘法分多次运行。通过 `for` 循环，2个线程运行一次，3个线程运行一次，...，12个线程运行一次，以此类推。
+5. 记录两种算法的运行时间并输出，保留到小数点后两位。
+
+### 代码说明：
+
+- `init_randon_matrix`：初始化矩阵函数。
+- `calc`：矩阵乘法计算的函数。
+- `matirxMulti`：串行矩阵乘法函数。
+- `matrixMultiOMP`：并行矩阵乘法函数。
+
+### 实验结果与分析
+
+1. 矩阵维度是 `[100, 120] X [120, 130]`
+
+![](2.png)
+
+可见在数据量很小时，运行时间差异不是很明显，因此扩大数据维度，加大计算量。
+
+2. 矩阵维度是 `[1024, 986] X [986, 1112]`
+
+![](3.png)
+
+显而意见，多线程运行的速度要低于单线程，且线程数量越多，运行速度越慢。这是因为：在多线程执行一个任务时，需要经过划分子任务、执行子任务、子任务结果汇总等多个阶段。而在这期间需要大量的线程通信（结果汇总）、线程上下文切换（其他任务也要占用CPU）等，这势必会造成额外的系统开销，所以当线程数量越多时，执行速度有了明显下降。
+
+因此，只有当计算任务较大时，大于多线程之间带来的系统开销，多线程的优势才会发挥出来。因此再次提升数据维度，加大计算量，分析结果。
+
+3. 矩阵维度是 `[2213, 3124] X [3124, 2569]`
+
+![](4.png)
+
+当计算复杂度逐步提升时，可见6线程运行时间与单线程结果近似。当线程数量小于6时，程序执行速度快于单线程；当线程数量大于6时，因为线程之间的开销较大，所以执行速度慢于单线程。

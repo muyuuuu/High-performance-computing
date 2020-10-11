@@ -1,8 +1,6 @@
-写出自己电脑的配置。
-
 ## 硬件
 
-- CPU：Intel(R) Core(TM) i7-9750H CPU，`14nm`，6核12线程，主率`2.60GHz`，睿频`4.50GHz`，12MB的`Cache`，TDP为45W。
+- CPU：Intel(R) Core(TM) i7-9750H CPU，14nm，6核12线程，主率2.60GHz，，12MB的Cache，TDP为45W。
 - 内存：Samsung Memory M471A2G44AM0-CTD，32GB大小，64位宽，DDR4类型，数据率为2667MT/s。
 - 外存：1TB的三星PM981a，双m.2 SSD接口。单线程4KB/s读速率：52MB/s，写速率：132MB/s。
 - 屏幕：15.6寸，分辨率：1920×1080，色域：72%NTSC，DC调光。
