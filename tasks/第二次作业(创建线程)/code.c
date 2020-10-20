@@ -9,7 +9,7 @@ int g = 0;
 void* count(void* args){
     g++;
 }
- 
+
 int main(){
     // 定义线程的 id 变量，多个变量使用数组
     pthread_t tids[NUM_THREADS];
@@ -21,5 +21,6 @@ int main(){
             printf("pthread_create error: error_code = %d", ret);
         }
     }
+    pthread_join(*tids, NULL);
     printf("g = %d", g);
 }

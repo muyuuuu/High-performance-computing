@@ -1,6 +1,6 @@
 ## 代码执行环境依赖：
 
-1. gcc版本: 10.2.0
+1. g++版本: 10.2.0
 2. OS: Manjaro Linux 20.1.1
 3. 物理硬件：CPU为6核12线程
 4. 编译方式：`g++ -fopenmp matrix.c`
@@ -27,21 +27,7 @@
 
 ### 实验结果与分析
 
-[1500, 2000] X [2000, 1200] : 
-1 thread runs in 17.43 seconds.
-2 thread runs in 8.74 seconds.
-3 thread runs in 5.79 seconds.
-4 thread runs in 4.35 seconds.
-5 thread runs in 3.51 seconds.
-6 thread runs in 2.97 seconds.
-7 thread runs in 3.65 seconds.
-8 thread runs in 3.39 seconds.
-9 thread runs in 2.97 seconds.
-10 thread runs in 2.99 seconds.
-11 thread runs in 2.93 seconds.
-12 thread runs in 3.14 seconds.
-
-17.43, 8.74, 5.79, 4.35, 3.51, 2.97, 3.65, 3.39, 2.97, 2.99, 2.93, 3.14
+![](m1.png)
 
 [854, 634] X [634, 732] : 
 1 thread runs in 1.29 seconds.
@@ -57,4 +43,24 @@
 11 thread runs in 0.22 seconds.
 12 thread runs in 0.22 seconds.
 
-1.29, 0.65, 0.45, 0.35, 0.28, 0.22, 0.28, 0.27, 0.23, 0.24, 0.22, 0.22
+加速比与效率：
+
+![](1.png)
+
+![](m2.png)
+
+[1500, 2000] X [2000, 1200] : 
+1 thread runs in 17.43 seconds.
+2 thread runs in 8.74 seconds.
+3 thread runs in 5.79 seconds.
+4 thread runs in 4.35 seconds.
+5 thread runs in 3.51 seconds.
+6 thread runs in 2.97 seconds.
+7 thread runs in 3.65 seconds.
+8 thread runs in 3.39 seconds.
+9 thread runs in 2.97 seconds.
+10 thread runs in 2.99 seconds.
+11 thread runs in 2.93 seconds.
+12 thread runs in 3.14 seconds.
+
+![](2.png)

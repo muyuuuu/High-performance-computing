@@ -1,13 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h> 
+#include <chrono> 
+#include <math.h>
 #include <omp.h>
+#include <iostream>
 
 // 第一个矩阵的维度是：[row1, col1]
 // 第二个矩阵的维度是：[col1, col2]
 #define row1 2213
 #define col1 3124
 #define col2 2569
+
+using namespace std;
 
 // 第一个矩阵
 float m1[row1][col1];
@@ -59,33 +63,50 @@ void matrixMultiOMP(int num){
     }
 }
 
+//  判断串行结果和并行结果是否一致
+int judge_euqal(){
+    int flag = 0;
+    for (int i = 0; i < row1; i++){
+        for (int j = 0; j < col2; j++){
+            if (abs(r1[i][j] - r2[i][j]) > 1e-6){
+                flag = 1;
+            }
+        }
+    }
+    return flag;
+}
+
 int main(int argc, char const *argv[])
 {   
     printf("[%d, %d] X [%d, %d] : \n", row1, col1, col1, col2);
-
-    // 运行 10 次观察结果
-    int epochs = 10;
-    // 线程数量
-    int num_threads = 12;
-    // 计时
-    clock_t start, end; 
     // 初始化矩阵 
     init_randon_matrix((float *)m1, row1, col1);
     init_randon_matrix((float *)m2, col1, col2);
 
+    // 线程数量
+    int num_threads = 12;
+
     // 串行计时
-    start = clock(); 
+    auto start = std::chrono::system_clock::now();
     matirxMulti();
-    end = clock();  
-    printf("1 thread runs in %.2f seconds.\n", (double)(end-start) / CLOCKS_PER_SEC );  
+    auto end  = std::chrono::system_clock::now();
+    std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(end - start);
+    printf("1 thread runs in %.2f seconds.\n", time_span);
 
     // 从 2 个线程一直到 12 个线程，纪录实验结果
     for (int num = 2; num <= num_threads; num++){        
         // 并行计时
-        start = clock(); 
+        start = std::chrono::system_clock::now();
         matrixMultiOMP(num);
-        end = clock();  
-        printf("%d threads runs in %.2f seconds.\n", num, (double)(end-start) / CLOCKS_PER_SEC ); 
+        end = std::chrono::system_clock::now();
+        time_span = std::chrono::duration_cast<std::chrono::duration<double>>(end - start);
+        printf("%d thread runs in %.2f seconds.\n", num, time_span);
     }
+    
+    //  判断串行结果和并行结果是否一致
+    int flag = judge_euqal();
+
+    flag == 0 ? printf("Result is Correct") : printf("Result is Error");
+
     return 0;
 }
