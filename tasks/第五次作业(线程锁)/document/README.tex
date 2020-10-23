@@ -7,6 +7,7 @@
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{enumitem}
 \pagestyle{plain}
 \usepackage{listings}
 \lstset{
@@ -52,7 +53,7 @@
 \section{电脑配置}
 
 电脑基本配置如下所示：
-\begin{enumerate}
+\begin{enumerate}[itemsep=-1ex,partopsep=1ex]
     \item CPU:i7-9750H，6核12线程。
     \item RAM：32GB。
     \item GPU：UHD Graphics 630, 256MB。
@@ -89,7 +90,7 @@
  
 \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.35]{../mutex.png}
+    \includegraphics[scale=0.4]{../mutex.png}
     \caption{互斥量试验结果图}
     \label{mutex}
 \end{figure}
@@ -123,7 +124,7 @@
 根据原理解析，创建计数值为1的信号量，
 因此只需要在程序中的{\ttfamily g\_Count++}前添加{\ttfamily wait}操作，在{\ttfamily g\_Count++}后添加{\ttfamily post}的操作即可。
 同样创建200个线程，在程序内设置循环10次运行信号量的实验，并分别输出每次运行的结果，如图\ref{sem}所示。
-对代码和结果进行分析可知，程序运行正确。代码见提交作业中的{\ttfamily sem.c}文件。
+对代码和结果进行观察可知，程序运行正确。代码见提交作业中的{\ttfamily sem.c}文件。
  
 \begin{figure}[ht]
     \centering
@@ -227,7 +228,7 @@ result.txt}文件中。
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.35]{../cond.png}
+    \includegraphics[scale=0.4]{../cond.png}
     \caption{条件变量试验结果图}
     \label{cond}
 \end{figure}
