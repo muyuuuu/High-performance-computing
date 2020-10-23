@@ -1,0 +1,1030 @@
+140669718033984 thread entered, getting read lock
+===================0====================
+140669718033984 got the rwlock read lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================1====================
+140669684463168 got the rwlock read lock, now unlock
+140669701248576 thread entered, getting read lock
+===================1====================
+140669701248576 got the rwlock read lock, now unlock
+140669667677760 thread entered, getting read lock
+===================1====================
+140669667677760 got the rwlock read lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669650892352 thread entered, getting read lock
+===================3====================
+140669650892352 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================4====================
+140669565789760 got the rwlock read lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================7====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================8====================
+140669515433536 got the rwlock read lock, now unlock
+140669498648128 thread entered, getting read lock
+===================8====================
+140669498648128 got the rwlock read lock, now unlock
+140669549004352 thread entered, getting read lock
+140669507040832 thread entered, getting write lock
+===================8====================
+140669549004352 got the rwlock read lock, now unlock
+140669507040832 got the rwlock write lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================10====================
+140669481862720 got the rwlock read lock, now unlock
+140669465077312 thread entered, getting read lock
+===================10====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================12====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================13====================
+140669431506496 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================15====================
+140669397935680 got the rwlock read lock, now unlock
+140669414721088 thread entered, getting read lock
+===================15====================
+140669414721088 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669381150272 thread entered, getting read lock
+===================16====================
+140669381150272 got the rwlock read lock, now unlock
+140669372757568 thread entered, getting write lock
+140669372757568 got the rwlock write lock, now unlock
+140669364364864 thread entered, getting read lock
+===================17====================
+140669364364864 got the rwlock read lock, now unlock
+140669355972160 thread entered, getting write lock
+140669355972160 got the rwlock write lock, now unlock
+140669339186752 thread entered, getting write lock
+140669339186752 got the rwlock write lock, now unlock
+140669347579456 thread entered, getting read lock
+===================19====================
+140669347579456 got the rwlock read lock, now unlock
+140669330794048 thread entered, getting read lock
+===================19====================
+140669330794048 got the rwlock read lock, now unlock
+140669322401344 thread entered, getting write lock
+140669322401344 got the rwlock write lock, now unlock
+Final, count = 20
+
+
+140669322401344 thread entered, getting read lock
+===================0====================
+140669322401344 got the rwlock read lock, now unlock
+140669339186752 thread entered, getting read lock
+===================0====================
+140669339186752 got the rwlock read lock, now unlock
+140669330794048 thread entered, getting write lock
+140669347579456 thread entered, getting write lock
+140669330794048 got the rwlock write lock, now unlock
+140669347579456 got the rwlock write lock, now unlock
+140669718033984 thread entered, getting read lock
+===================2====================
+140669718033984 got the rwlock read lock, now unlock
+140669701248576 thread entered, getting read lock
+===================2====================
+140669701248576 got the rwlock read lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================5====================
+140669684463168 got the rwlock read lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669650892352 thread entered, getting read lock
+===================5====================
+140669650892352 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669549004352 thread entered, getting read lock
+===================7====================
+140669549004352 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================10====================
+140669515433536 got the rwlock read lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================11====================
+140669498648128 got the rwlock read lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================16====================
+140669431506496 got the rwlock read lock, now unlock
+140669414721088 thread entered, getting read lock
+===================16====================
+140669414721088 got the rwlock read lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================17====================
+140669397935680 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669381150272 thread entered, getting read lock
+===================18====================
+140669381150272 got the rwlock read lock, now unlock
+140669372757568 thread entered, getting write lock
+140669372757568 got the rwlock write lock, now unlock
+140669364364864 thread entered, getting read lock
+===================19====================
+140669364364864 got the rwlock read lock, now unlock
+140669355972160 thread entered, getting write lock
+140669355972160 got the rwlock write lock, now unlock
+Final, count = 20
+
+
+140669355972160 thread entered, getting read lock
+===================0====================
+140669355972160 got the rwlock read lock, now unlock
+140669364364864 thread entered, getting write lock
+140669364364864 got the rwlock write lock, now unlock
+140669372757568 thread entered, getting read lock
+===================1====================
+140669372757568 got the rwlock read lock, now unlock
+140669381150272 thread entered, getting write lock
+140669381150272 got the rwlock write lock, now unlock
+140669718033984 thread entered, getting read lock
+===================2====================
+140669718033984 got the rwlock read lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669701248576 thread entered, getting read lock
+===================3====================
+140669701248576 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================4====================
+140669684463168 got the rwlock read lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669650892352 thread entered, getting read lock
+===================6====================
+140669650892352 got the rwlock read lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669549004352 thread entered, getting read lock
+===================8====================
+140669549004352 got the rwlock read lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================10====================
+140669515433536 got the rwlock read lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================11====================
+140669498648128 got the rwlock read lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================15====================
+140669431506496 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669414721088 thread entered, getting read lock
+===================16====================
+140669414721088 got the rwlock read lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================17====================
+140669397935680 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669347579456 thread entered, getting read lock
+===================18====================
+140669347579456 got the rwlock read lock, now unlock
+140669339186752 thread entered, getting write lock
+140669339186752 got the rwlock write lock, now unlock
+140669330794048 thread entered, getting read lock
+===================19====================
+140669330794048 got the rwlock read lock, now unlock
+140669322401344 thread entered, getting write lock
+140669322401344 got the rwlock write lock, now unlock
+Final, count = 20
+
+
+140669322401344 thread entered, getting read lock
+===================0====================
+140669322401344 got the rwlock read lock, now unlock
+140669330794048 thread entered, getting write lock
+140669330794048 got the rwlock write lock, now unlock
+140669347579456 thread entered, getting write lock
+140669347579456 got the rwlock write lock, now unlock
+140669339186752 thread entered, getting read lock
+===================2====================
+140669339186752 got the rwlock read lock, now unlock
+140669718033984 thread entered, getting read lock
+===================2====================
+140669718033984 got the rwlock read lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669701248576 thread entered, getting read lock
+===================3====================
+140669701248576 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================4====================
+140669684463168 got the rwlock read lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669650892352 thread entered, getting read lock
+===================5====================
+140669650892352 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669549004352 thread entered, getting read lock
+===================8====================
+140669549004352 got the rwlock read lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================10====================
+140669515433536 got the rwlock read lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================11====================
+140669498648128 got the rwlock read lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================15====================
+140669431506496 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669414721088 thread entered, getting read lock
+===================16====================
+140669414721088 got the rwlock read lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================17====================
+140669397935680 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669381150272 thread entered, getting read lock
+===================18====================
+140669381150272 got the rwlock read lock, now unlock
+140669372757568 thread entered, getting write lock
+140669372757568 got the rwlock write lock, now unlock
+140669364364864 thread entered, getting read lock
+===================19====================
+140669364364864 got the rwlock read lock, now unlock
+140669355972160 thread entered, getting write lock
+140669355972160 got the rwlock write lock, now unlock
+Final, count = 20
+
+
+140669355972160 thread entered, getting read lock
+===================0====================
+140669355972160 got the rwlock read lock, now unlock
+140669372757568 thread entered, getting read lock
+===================0====================
+140669372757568 got the rwlock read lock, now unlock
+140669364364864 thread entered, getting write lock
+140669364364864 got the rwlock write lock, now unlock
+140669718033984 thread entered, getting read lock
+===================1====================
+140669718033984 got the rwlock read lock, now unlock
+140669381150272 thread entered, getting write lock
+140669381150272 got the rwlock write lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669701248576 thread entered, getting read lock
+===================3====================
+140669701248576 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================4====================
+140669684463168 got the rwlock read lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669650892352 thread entered, getting read lock
+===================6====================
+140669650892352 got the rwlock read lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669549004352 thread entered, getting read lock
+===================8====================
+140669549004352 got the rwlock read lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================10====================
+140669515433536 got the rwlock read lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================11====================
+140669498648128 got the rwlock read lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================15====================
+140669431506496 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669414721088 thread entered, getting read lock
+===================16====================
+140669414721088 got the rwlock read lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================17====================
+140669397935680 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669347579456 thread entered, getting read lock
+===================18====================
+140669347579456 got the rwlock read lock, now unlock
+140669339186752 thread entered, getting write lock
+140669339186752 got the rwlock write lock, now unlock
+140669330794048 thread entered, getting read lock
+===================19====================
+140669330794048 got the rwlock read lock, now unlock
+140669322401344 thread entered, getting write lock
+140669322401344 got the rwlock write lock, now unlock
+Final, count = 20
+
+
+140669322401344 thread entered, getting read lock
+===================0====================
+140669322401344 got the rwlock read lock, now unlock
+140669330794048 thread entered, getting write lock
+140669330794048 got the rwlock write lock, now unlock
+140669339186752 thread entered, getting read lock
+===================1====================
+140669339186752 got the rwlock read lock, now unlock
+140669718033984 thread entered, getting read lock
+===================1====================
+140669718033984 got the rwlock read lock, now unlock
+140669347579456 thread entered, getting write lock
+140669347579456 got the rwlock write lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669701248576 thread entered, getting read lock
+===================3====================
+140669701248576 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================4====================
+140669684463168 got the rwlock read lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669650892352 thread entered, getting read lock
+===================6====================
+140669650892352 got the rwlock read lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669549004352 thread entered, getting read lock
+===================8====================
+140669549004352 got the rwlock read lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================10====================
+140669515433536 got the rwlock read lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================11====================
+140669498648128 got the rwlock read lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================15====================
+140669431506496 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669414721088 thread entered, getting read lock
+===================16====================
+140669414721088 got the rwlock read lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================17====================
+140669397935680 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669381150272 thread entered, getting read lock
+===================18====================
+140669381150272 got the rwlock read lock, now unlock
+140669372757568 thread entered, getting write lock
+140669372757568 got the rwlock write lock, now unlock
+140669364364864 thread entered, getting read lock
+===================19====================
+140669364364864 got the rwlock read lock, now unlock
+140669355972160 thread entered, getting write lock
+140669355972160 got the rwlock write lock, now unlock
+Final, count = 20
+
+
+140669355972160 thread entered, getting read lock
+===================0====================
+140669355972160 got the rwlock read lock, now unlock
+140669364364864 thread entered, getting write lock
+140669364364864 got the rwlock write lock, now unlock
+140669372757568 thread entered, getting read lock
+===================1====================
+140669372757568 got the rwlock read lock, now unlock
+140669381150272 thread entered, getting write lock
+140669381150272 got the rwlock write lock, now unlock
+140669718033984 thread entered, getting read lock
+===================2====================
+140669718033984 got the rwlock read lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669701248576 thread entered, getting read lock
+===================3====================
+140669701248576 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================4====================
+140669684463168 got the rwlock read lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669650892352 thread entered, getting read lock
+===================6====================
+140669650892352 got the rwlock read lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669549004352 thread entered, getting read lock
+===================8====================
+140669549004352 got the rwlock read lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================10====================
+140669515433536 got the rwlock read lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================12====================
+140669498648128 got the rwlock read lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================15====================
+140669431506496 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669414721088 thread entered, getting read lock
+===================16====================
+140669414721088 got the rwlock read lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================17====================
+140669397935680 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669347579456 thread entered, getting read lock
+===================18====================
+140669347579456 got the rwlock read lock, now unlock
+140669339186752 thread entered, getting write lock
+140669339186752 got the rwlock write lock, now unlock
+140669330794048 thread entered, getting read lock
+===================19====================
+140669330794048 got the rwlock read lock, now unlock
+140669322401344 thread entered, getting write lock
+140669322401344 got the rwlock write lock, now unlock
+Final, count = 20
+
+
+140669322401344 thread entered, getting read lock
+===================0====================
+140669322401344 got the rwlock read lock, now unlock
+140669330794048 thread entered, getting write lock
+140669330794048 got the rwlock write lock, now unlock
+140669347579456 thread entered, getting write lock
+140669347579456 got the rwlock write lock, now unlock
+140669339186752 thread entered, getting read lock
+===================2====================
+140669339186752 got the rwlock read lock, now unlock
+140669718033984 thread entered, getting read lock
+===================2====================
+140669718033984 got the rwlock read lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669701248576 thread entered, getting read lock
+===================3====================
+140669701248576 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================4====================
+140669684463168 got the rwlock read lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669650892352 thread entered, getting read lock
+===================6====================
+140669650892352 got the rwlock read lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669549004352 thread entered, getting read lock
+===================7====================
+140669549004352 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================10====================
+140669515433536 got the rwlock read lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================11====================
+140669498648128 got the rwlock read lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================15====================
+140669431506496 got the rwlock read lock, now unlock
+140669414721088 thread entered, getting read lock
+===================15====================
+140669414721088 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================17====================
+140669397935680 got the rwlock read lock, now unlock
+140669381150272 thread entered, getting read lock
+===================17====================
+140669381150272 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669372757568 thread entered, getting write lock
+140669372757568 got the rwlock write lock, now unlock
+140669355972160 thread entered, getting write lock
+140669355972160 got the rwlock write lock, now unlock
+140669364364864 thread entered, getting read lock
+===================20====================
+140669364364864 got the rwlock read lock, now unlock
+Final, count = 20
+
+
+140669355972160 thread entered, getting read lock
+===================0====================
+140669355972160 got the rwlock read lock, now unlock
+140669364364864 thread entered, getting write lock
+140669364364864 got the rwlock write lock, now unlock
+140669372757568 thread entered, getting read lock
+===================1====================
+140669372757568 got the rwlock read lock, now unlock
+140669381150272 thread entered, getting write lock
+140669381150272 got the rwlock write lock, now unlock
+140669718033984 thread entered, getting read lock
+===================2====================
+140669718033984 got the rwlock read lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669701248576 thread entered, getting read lock
+===================3====================
+140669701248576 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================5====================
+140669684463168 got the rwlock read lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669650892352 thread entered, getting read lock
+===================6====================
+140669650892352 got the rwlock read lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669549004352 thread entered, getting read lock
+===================8====================
+140669549004352 got the rwlock read lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669515433536 thread entered, getting read lock
+===================9====================
+140669515433536 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================11====================
+140669498648128 got the rwlock read lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================15====================
+140669431506496 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669414721088 thread entered, getting read lock
+===================16====================
+140669414721088 got the rwlock read lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669397935680 thread entered, getting read lock
+===================17====================
+140669397935680 got the rwlock read lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669347579456 thread entered, getting read lock
+===================18====================
+140669347579456 got the rwlock read lock, now unlock
+140669339186752 thread entered, getting write lock
+140669339186752 got the rwlock write lock, now unlock
+140669330794048 thread entered, getting read lock
+===================19====================
+140669330794048 got the rwlock read lock, now unlock
+140669322401344 thread entered, getting write lock
+140669322401344 got the rwlock write lock, now unlock
+Final, count = 20
+
+
+140669322401344 thread entered, getting read lock
+===================0====================
+140669322401344 got the rwlock read lock, now unlock
+140669330794048 thread entered, getting write lock
+140669330794048 got the rwlock write lock, now unlock
+140669339186752 thread entered, getting read lock
+===================1====================
+140669339186752 got the rwlock read lock, now unlock
+140669347579456 thread entered, getting write lock
+140669347579456 got the rwlock write lock, now unlock
+140669718033984 thread entered, getting read lock
+===================2====================
+140669718033984 got the rwlock read lock, now unlock
+140669709641280 thread entered, getting write lock
+140669709641280 got the rwlock write lock, now unlock
+140669701248576 thread entered, getting read lock
+===================3====================
+140669701248576 got the rwlock read lock, now unlock
+140669692855872 thread entered, getting write lock
+140669692855872 got the rwlock write lock, now unlock
+140669684463168 thread entered, getting read lock
+===================4====================
+140669684463168 got the rwlock read lock, now unlock
+140669676070464 thread entered, getting write lock
+140669676070464 got the rwlock write lock, now unlock
+140669667677760 thread entered, getting read lock
+===================5====================
+140669667677760 got the rwlock read lock, now unlock
+140669659285056 thread entered, getting write lock
+140669659285056 got the rwlock write lock, now unlock
+140669650892352 thread entered, getting read lock
+===================6====================
+140669650892352 got the rwlock read lock, now unlock
+140669574182464 thread entered, getting write lock
+140669574182464 got the rwlock write lock, now unlock
+140669565789760 thread entered, getting read lock
+===================7====================
+140669565789760 got the rwlock read lock, now unlock
+140669557397056 thread entered, getting write lock
+140669557397056 got the rwlock write lock, now unlock
+140669549004352 thread entered, getting read lock
+===================8====================
+140669549004352 got the rwlock read lock, now unlock
+140669540611648 thread entered, getting write lock
+140669540611648 got the rwlock write lock, now unlock
+140669532218944 thread entered, getting read lock
+===================9====================
+140669532218944 got the rwlock read lock, now unlock
+140669523826240 thread entered, getting write lock
+140669523826240 got the rwlock write lock, now unlock
+140669515433536 thread entered, getting read lock
+===================10====================
+140669515433536 got the rwlock read lock, now unlock
+140669507040832 thread entered, getting write lock
+140669507040832 got the rwlock write lock, now unlock
+140669498648128 thread entered, getting read lock
+===================11====================
+140669498648128 got the rwlock read lock, now unlock
+140669490255424 thread entered, getting write lock
+140669490255424 got the rwlock write lock, now unlock
+140669481862720 thread entered, getting read lock
+===================12====================
+140669481862720 got the rwlock read lock, now unlock
+140669473470016 thread entered, getting write lock
+140669473470016 got the rwlock write lock, now unlock
+140669465077312 thread entered, getting read lock
+===================13====================
+140669465077312 got the rwlock read lock, now unlock
+140669456684608 thread entered, getting write lock
+140669456684608 got the rwlock write lock, now unlock
+140669448291904 thread entered, getting read lock
+===================14====================
+140669448291904 got the rwlock read lock, now unlock
+140669439899200 thread entered, getting write lock
+140669439899200 got the rwlock write lock, now unlock
+140669431506496 thread entered, getting read lock
+===================15====================
+140669431506496 got the rwlock read lock, now unlock
+140669423113792 thread entered, getting write lock
+140669423113792 got the rwlock write lock, now unlock
+140669414721088 thread entered, getting read lock
+===================16====================
+140669414721088 got the rwlock read lock, now unlock
+140669397935680 thread entered, getting read lock
+===================16====================
+140669397935680 got the rwlock read lock, now unlock
+140669406328384 thread entered, getting write lock
+140669406328384 got the rwlock write lock, now unlock
+140669389542976 thread entered, getting write lock
+140669389542976 got the rwlock write lock, now unlock
+140669381150272 thread entered, getting read lock
+===================18====================
+140669381150272 got the rwlock read lock, now unlock
+140669372757568 thread entered, getting write lock
+140669372757568 got the rwlock write lock, now unlock
+140669364364864 thread entered, getting read lock
+===================19====================
+140669364364864 got the rwlock read lock, now unlock
+140669355972160 thread entered, getting write lock
+140669355972160 got the rwlock write lock, now unlock
+Final, count = 20
+
+
