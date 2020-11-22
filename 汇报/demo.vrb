@@ -1,0 +1,22 @@
+\frametitle{并行部分伪代码}
+\begin{columns}[T,onlytextwidth]
+            \column{0.3\textwidth}
+
+            \column{0.618\textwidth}
+            \begin{block}{设备检测，即如何监测多卡}
+                \begin{minted}{python}
+                    if device_ids is None:
+                        device_ids = _get_all_device_indices()
+
+                    if output_device is None:
+                        output_device = device_ids[0]
+                \end{minted}
+            \end{block}
+            \begin{block}{不同方式的并行}
+                \begin{minted}{python}
+                    net = DataParallel(Compare(n_way, k_shot)).cuda()
+                    net = DDP(Compare(n_way, k_shot)).cuda()
+                \end{minted}
+            \end{block}
+        \end{columns}
+\beamerclosesubstitutedenvironement {fragile}
