@@ -1,0 +1,39 @@
+\section{实验环境}
+
+实验的成功进行离不开软件件配置，本章分别介绍实验所依赖的的硬件设备和开发环境及版本，
+之后介绍本次实验所选用的参数。
+
+\subsection{硬件设备}
+
+\begin{enumerate}[itemsep=-1ex,partopsep=1ex]
+    \item CPU：2个Intel(R) Xeon(R) Gold 5115 CPU \@ 2.40GHz，10核心20线程。
+    \item GPU：4路Tesla P40，每路显存容量22GB，共88GB。
+    \item 内存：128GB。
+    \item 外存：520TB可用，已用15TB。
+\end{enumerate}
+
+\subsection{软件环境与版本}
+
+\begin{enumerate}[itemsep=-1ex,partopsep=1ex]
+    \item 运行程序的系统为 CentOS Linux release 7.3.1611。
+    \item 开发程序的系统为 Arch 5.9.6。
+    \item python：3.8.2：作为开发语言。
+    \item pytorch：1.6.0：作为模型实现的工具，借助其提供的API实现并行。
+    \item ssh：OpenSSH\_8.3p1, OpenSSL 1.1.1h，实现远程登录功能，即本地登录到服务器。
+    \item scp：实现文件传输功能，将本地文件传输至服务器，或将服务器文件传输至本地。
+\end{enumerate}
+
+在进入服务器后，不能在根目录下直接配置实验环境，否则第三方库之间的版本依赖、冲突等问题会对他人的程序造成一定影响。
+因此，首先使用conda创建虚拟环境，在conda activate进入虚拟环境后配置本次实验所需的依赖库。对于本实验，
+进入虚拟环境后pip install torch torchvision即可。
+
+\subsection{参数设置}
+
+\begin{enumerate}[itemsep=-1ex,partopsep=1ex]
+    \item n\_way = 5, 5个类为一组支持集。
+    \item k\_query = 1，查询集只含有1个类。
+    \item k\_shot = 1，支持集和查询集中每个类中只有一个样本。
+    \item batchsz = 30，每一组训练的数据中由30组支持集和查询集组成。
+\end{enumerate}
+
+在不同的对比实验中，除需对比的参数外，其余实验参数需要保持一致，否则程序的执行时间会相差很远，无法得到准确的加速比。

@@ -1,0 +1,95 @@
+\section*{附录A：遇到问题及解决方案}
+\addcontentsline{toc}{section}{附录A：遇到问题及解决方案}
+
+\subsection*{数据无法序列化}
+\addcontentsline{toc}{section}{A.1：数据无法序列化}
+
+在深度学习中，常常需要把训练好的模型或使用数据对象存储起来，这样在训练或预测时直接将模型读出，
+而不需要重新读取数据，这样就大大节约了时间。Python提供的pickle库就很好地解决了这个问题，
+它可以序列化对象并保存到磁盘中，并在需要的时候读取出来。
+
+在加载数据时，使用多进程加载数据，并设置num\_workers来指定进程的数量。
+在这样形式下获取的数据可以在DataParallel方法中训练，
+并没有错误。但在DistributedDataParallel方法训练时，提示有数据无法序列化的原因。
+
+在仔细阅读DistributedDataParallel和DataLoader的官方文档后发现了原因，
+因为num\_workers会开启多进程读取数据，且序列化数据。而DistributedDataParallel
+训练数据时，也会序列化数据。导致在DistributedDataParallel训练时会有两次序列化数据，
+因此产生错误。所以，在DistributedDataParallel训练方式中，只需要
+将num\_workers设定为0即可。
+
+\subsection*{显存溢出错误}
+\addcontentsline{toc}{section}{A.2：显存溢出错误}
+
+深度学习的网络参数和数据量往往较大，因此常常发生显存溢出错误，且因为DistributedDataParallel独特的并行机制，
+会需要更大的显存空间，所以需要一些设计技巧来规避显存溢出问题。
+
+\begin{enumerate}[leftmargin=0pt,itemindent=3.5\ccwd]
+    \item 为避免浪费服务器的内存，可以把模型和数据通过.cuda()方法放到CUDA中在使用。
+    \item 通常在训练结束后想要绘制loss的图像，都是将loss添加到一个列表中保存。
+    但在保存前可以使用detach方法将loss的数值与计算图解锁，然后仅保存其数值。
+    否则会将计算图添加到列表中，造成内存的浪费。
+    \item 使用numpy操作数据，而不是列表。python的列表存储了对象引用地址和对象本身，因此对象在内存中并不连续，
+    通过引用地址来访问对象。numpy在会开辟连续的内存空间来存储对象，因此只需要存储一个引用。相比之下，在内存空间、
+    访问效率等两个角度而言，numpy比列表更具优势。
+    \item DistributedDataParallel需要更大的显存空间去存储参数状态、自动求导的钩子、用于通信的参数桶
+    和Reducer。所以在每一次训练过程中，不能加载过大的的训练数据。
+\end{enumerate}
+
+\subsection*{数据泄漏}
+\addcontentsline{toc}{section}{A.3：数据无法共享}
+
+在DistributedDataParallel并行方式中，显示rank1无法获取rank0数据的错误，可以分析得到出错的原因是
+DistributedDataParallel的机制限制了多进程之间不能共享同一张卡。
+
+在发现问题出错的原因后，定位到代码前后查找错误来源。在训练过后的验证阶段，为计算网络的准确率，
+额外声明了一个计算图外的变量，所以这个变量并没有准确的归属，可能在0号显卡，也可能在1号显卡。
+在AllReduce通信时，发现一张显卡有这个变量，而其余的显卡没有这个变量，所以导致此类错误。
+因此需要将计算图外的变量放到每一张显卡中来避免此类错误，而显卡使用进程编号rank标记，
+所以只需要对数据使用.to(rank)方法即可。在采用上述方法后，错误消失。
+
+\subsection*{无法迭代0维张量}
+\addcontentsline{toc}{section}{A.4：无法迭代0维张量}
+
+在训练的开始时，报错信息为：无法迭代0维度的数据，定位到出错代码位置，打印相关张量后发现数据维度并不是0。
+但解释器仍然提示无法迭代0维向量。因此扩大debug范围，观察出错代码的函数，发现函数需要传入5个参数，而在调用
+时少传入一个参数只传入了4个参数，所以产生无法迭代0维张量的错误。在补全参数后，此错误消失，网络可以被正确训练。
+因此解释器的报错提示并不一定准确，还需要对出错代码进行实际查验。
+
+\section*{附录B：实验程序相关文件}
+\addcontentsline{toc}{section}{附录B：实验程序相关文件}
+
+使用ssh连接到服务器后并进入虚拟环境后，按照前文所述进行实验。
+因代码量较大，已达千行左右，可在Github
+\footnote{\scriptsize\ttfamily{https://github.com/muyuuuu/Algorithm/tree/master/meta-learning/Metric-based/Relation-Netowrk}}获取完整程序。
+附录只对各个模块的核心程序进行展示。
+
+并行加载数据方法的核心程序：
+\begin{code}
+    \lstinputlisting[language=Python]{code/data.py}
+\end{code}
+
+DistributedDataParallel并行方法核心程序：
+\begin{code}
+    \lstinputlisting[language=Python]{code/ddp.py}
+\end{code}
+
+DataParallel并行方法核心程序：
+\begin{code}
+    \lstinputlisting[language=Python]{code/dp.py}
+\end{code}
+
+Relation Network核心程序：
+\begin{code}
+    \lstinputlisting[language=Python]{code/network.py}
+\end{code}
+
+特征提取层中的一组模块：
+\begin{code}
+    \lstinputlisting[language=Python]{code/feature.py}
+\end{code}
+
+Relation Network最后用于计算Relatoin Score的全连接层：
+\begin{code}
+    \lstinputlisting[language=Python]{code/fn.py}
+\end{code}
